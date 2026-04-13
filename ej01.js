@@ -103,15 +103,27 @@ app.get('/alumnos/:dni', async (req, res) => {
 });
 
 app.post('/alumnos/agregar', async (req, res) => {
-    Nombre = req.query.nom
-    Dni = req.query.dni
-    Edad = req.query.edad
+    let Nombre = req.query.nom
+    let Dni = req.query.dni
+    let Edad = req.query.edad
     try {
         alumnosArray.push(new Alumno(Nombre, Dni, Edad))
         res.status(201).send('Agregadiño')
     }
     catch {
         res.status(400).send('fallo')
+    }
+});
+app.delete('/alumnos', async (req, res) => {
+    let Dni = req.query.dni;
+
+    const indice = alumnosArray.findIndex(item => item.dni == Dni);
+
+    if (indice < 0) {
+        return res.status(404).send('Alumno no encontrado');
+    } else {
+        delete alumnosArray[indice];
+        res.send('Alumno borrado');
     }
 });
 
