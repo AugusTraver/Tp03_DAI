@@ -1,0 +1,367 @@
+{
+	"info": {
+		"_postman_id": "b2ff2309-e0ed-43db-80ee-00a5a3e0cf73",
+		"name": "Dai_Tp03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/saludar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/saludar/Augusto",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"saludar",
+						"Augusto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/validarFecha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/validarfecha?Dia=1 &Mes=2&Anio=2025",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"validarfecha"
+					],
+					"query": [
+						{
+							"key": "Dia",
+							"value": "1 "
+						},
+						{
+							"key": "Mes",
+							"value": "2"
+						},
+						{
+							"key": "Anio",
+							"value": "2025"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/matematica/sumar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/matematica/sumar?n1=5&n2=3",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"matematica",
+						"sumar"
+					],
+					"query": [
+						{
+							"key": "n1",
+							"value": "5"
+						},
+						{
+							"key": "n2",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/matematica/restar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/matematica/restar?n1=5&n2=3",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"matematica",
+						"restar"
+					],
+					"query": [
+						{
+							"key": "n1",
+							"value": "5"
+						},
+						{
+							"key": "n2",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/matematica/multiplicar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/matematica/multiplicar?n1=5&n2=3",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"matematica",
+						"multiplicar"
+					],
+					"query": [
+						{
+							"key": "n1",
+							"value": "5"
+						},
+						{
+							"key": "n2",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/matematica/dividir",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/matematica/dividir?n1=5&n2=3",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"matematica",
+						"dividir"
+					],
+					"query": [
+						{
+							"key": "n1",
+							"value": "5"
+						},
+						{
+							"key": "n2",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/omdb/searchbypage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/omdb/searchbypage?search=Lord Of The Rings&p=1",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"omdb",
+						"searchbypage"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Lord Of The Rings"
+						},
+						{
+							"key": "p",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " /omdb/searchcomplete ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/omdb/searchcomplete?search=Lord Of The Rings",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"omdb",
+						"searchcomplete"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Lord Of The Rings"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/omdb/getbyid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/omdb/getbyid?search=tt0120737",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"omdb",
+						"getbyid"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "tt0120737"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/alumnos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/alumnos",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/alumnos/:dni",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/alumnos/22888444",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"alumnos",
+						"22888444"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/alumnos/agregar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/alumnos/agregar?nom=Augusto&edad=17&dni=49315675",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"alumnos",
+						"agregar"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "Augusto"
+						},
+						{
+							"key": "edad",
+							"value": "17"
+						},
+						{
+							"key": "dni",
+							"value": "49315675"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete/alumnos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/alumnos?dni=28946255",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"alumnos"
+					],
+					"query": [
+						{
+							"key": "dni",
+							"value": "28946255"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
