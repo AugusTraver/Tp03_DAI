@@ -362,6 +362,189 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "/isDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/fechas/isDate?fecha=2024-04-12",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"fechas",
+						"isDate"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2024-04-12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fechas/getEdadActual",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/fechas/getEdadActual?fechaNacimiento=2000-01-01",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"fechas",
+						"getEdadActual"
+					],
+					"query": [
+						{
+							"key": "fechaNacimiento",
+							"value": "2000-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fechas/getDiasHastaMiCumple",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/fechas/getDiasHastaMiCumple?fechaNacimiento=2009-01-05",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"fechas",
+						"getDiasHastaMiCumple"
+					],
+					"query": [
+						{
+							"key": "fechaNacimiento",
+							"value": "2009-01-05"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fechas/getDiaTexto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/fechas/getDiaTexto?fecha=2024-04-13",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"fechas",
+						"getDiaTexto"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2024-04-13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fechas/getDiaTexto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/fechas/getDiaTexto?fecha=2024-04-13&abr=true",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"fechas",
+						"getDiaTexto"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2024-04-13"
+						},
+						{
+							"key": "abr",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fechas/getMesTexto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/fechas/getMesTexto?fecha=2024-04-13",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"fechas",
+						"getMesTexto"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2024-04-13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/fechas/getMesTexto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:{{port}}/fechas/getMesTexto?fecha=2024-04-13&abr=true",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"fechas",
+						"getMesTexto"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2024-04-13"
+						},
+						{
+							"key": "abr",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
